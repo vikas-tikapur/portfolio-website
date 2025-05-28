@@ -196,6 +196,10 @@ img.site-logo {
   .home {
     padding: 30px 10px 30px 10px !important;
   }
+
+  .home-left h1 {
+    font-size: 30px !important;
+  }
   .about {
     padding: 30px 10px 30px 10px !important;
   }
