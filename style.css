@@ -200,6 +200,9 @@ img.site-logo {
   .home-left h1 {
     font-size: 30px !important;
   }
+  .btn, .btn-outline{
+    font-size: 13px !important;
+  }
   .about {
     padding: 30px 10px 30px 10px !important;
   }
