@@ -209,10 +209,21 @@ img.site-logo {
 }
 
 @media (max-width: 768px) {
+  #site-title {
+    font-size: 25px;
+  }
+  #site-footer {
+    font-size: 25px;
+  }
   .footer-container {
     gap: 0rem;
   }
-
+  .nav-hide.active {
+        display: none !important;
+    }
+    ul#nav-hide {
+    display: none !important;
+}
   .footer {
     padding: 20px 10px 10px 10px;
   }
@@ -278,12 +289,6 @@ img.site-logo {
   .projects-section {
     padding: 30px 10px !important;
     text-align: center !important;
-}
-    .navbar-links.active {
-        display: none;
-    }
-    ul#navbar-links {
-    display: none;
 }
 }
 
