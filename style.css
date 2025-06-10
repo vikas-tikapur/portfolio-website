@@ -279,6 +279,12 @@ img.site-logo {
     padding: 30px 10px !important;
     text-align: center !important;
 }
+    .navbar-links.active {
+        display: none;
+    }
+    ul#navbar-links {
+    display: none;
+}
 }
 
 
