@@ -105,40 +105,88 @@
   <a href="https://www.vcanaglobal.com/" target="_blank">View Project</a>
 </div>
 
-    <!--  Card 2 -->
+<!-- Card 2 -->
+ <div class="project-card">
+  <h3>Kupar Tours</h3>
+  <img src="images/Kupar.png" alt="Kupar Tours Logo" class="project-logo">
+  <a href="https://kupartours.com/" target="_blank">View Project</a>
+</div>
+
+<!-- Card 3 -->
+ <div class="project-card">
+  <h3>DataCenter BD Advisors</h3>
+  <img src="images/datacenter.png" alt="DataCenter BD Advisors Logo" class="project-logo">
+  <a href="https://developments.vcanaglobal.com/dcbdadvisors/" target="_blank">View Project</a>
+</div>
+
+<!-- Card 4 -->
+ <div class="project-card">
+  <h3>Driving Business Excellence</h3>
+  <img src="images/driving.png" alt="Driving Business Excellence Logo" class="project-logo">
+  <a href="https://drivingbizx.com/" target="_blank">View Project</a>
+</div>
+
+<!-- Card 5 -->
+ <div class="project-card">
+  <h3>DAscent Construction Group</h3>
+  <img src="images/ascent.png" alt="Driving Business Excellence Logo" class="project-logo">
+  <a href="https://ascentcgp.com/" target="_blank">View Project</a>
+</div>
+
+    <!--  Card 6 -->
     <div class="project-card">
+  <h3>Streamline Marine Services</h3>
+  <img src="images/stream.png" alt="Streamline Marine Services Logo" class="project-logo">
+  <a href="https://kayennecaribbean.com/" target="_blank">View Project</a>
+</div>
+
+
+<!--  Hidden Cards (Initially Hidden) -->
+
+<!-- Card 7 -->
+    <div class="project-card hidden-card">
   <h3>Hitek Marine Services</h3>
-  <img src="images/hitech.png" alt="HITEK MARINE SERVICES Logo" class="project-logo">
+  <img src="images/hitech.png" alt="Hitek Marine Services Logo" class="project-logo">
   <a href="https://hitekmarinegroup.com/" target="_blank">View Project</a>
 </div>
 
-    <!--  Card 3 -->
-    <div class="project-card">
+<!-- Card 8 -->
+    <div class="project-card hidden-card">
+  <h3>Sagesse Bio</h3>
+  <img src="images/sagesse.jpg" alt="Sagesse Bio Logo" class="project-logo">
+  <a href="https://developments.vcanaglobal.com/sagesse-bio/" target="_blank">View Project</a>
+</div>
+
+<!-- Card 9 -->
+    <div class="project-card hidden-card">
   <h3>Blytheconsulting</h3>
   <img src="images/blythe.png" alt="Blytheconsulting Logo" class="project-logo">
   <a href="https://blytheconsultinggroup.com/" target="_blank">View Project</a>
 </div>
 
-    <!-- Card 4 -->
-    <div class="project-card">
+<!-- Card 10 -->
+    <div class="project-card hidden-card">
   <h3>National Motorists Association (NMA)</h3>
-  <img src="images/nma.jpg" alt="Blytheconsulting Logo" class="project-logo">
+  <img src="images/nma.jpg" alt="National Motorists Association (NMA) Logo" class="project-logo">
   <a href="https://developments.vcanaglobal.com/nma/" target="_blank">View Project</a>
 </div>
 
-    <!--  Card 5 -->
-    <div class="project-card">
+<!-- Card 11 -->
+    <div class="project-card hidden-card">
   <h3>Kayenne Caribbean</h3>
   <img src="images/kayenn.jpg" alt="Kayenne Caribbean Logo" class="project-logo">
   <a href="https://kayennecaribbean.com/" target="_blank">View Project</a>
 </div>
 
-    <!-- Card 6 -->
-    <div class="project-card">
-  <h3>Sagesse Bio</h3>
-  <img src="images/sagesse.jpg" alt="Sagesse Bio Logo" class="project-logo">
-  <a href="https://developments.vcanaglobal.com/sagesse-bio/" target="_blank">View Project</a>
+  <!-- Card 12 -->
+    <div class="project-card hidden-card">
+  <h3>Kelly Kingsly</h3>
+  <img src="images/kelly.png" alt="Kelly Kingsly Logo" class="project-logo">
+  <a href="https://vcanaglobal.in/kellykingsly/" target="_blank">View Project</a>
 </div>
+  </div>
+  <div class="load-more-container">
+    <button id="loadMoreBtn">Load More</button>
   </div>
 </section>
 
@@ -200,6 +248,16 @@
     toggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+  const hiddenCards = document.querySelectorAll(".hidden-card");
+
+  loadMoreBtn.addEventListener("click", function () {
+    hiddenCards.forEach(card => {
+      card.style.display = "block"; // Show hidden cards
+    });
+    loadMoreBtn.style.display = "none"; // Hide the button
+  });
   </script>
 
 </body>
