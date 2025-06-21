@@ -142,12 +142,13 @@ I deliver scalable tools tailored for real-world problems.
     </div>
 
     <div class="contact-right">
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <form id="contactForm" action="#" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+<span id="thankYouMsg" style="display:none;color:rgb(0, 0, 0);font-weight:bold;padding-top: 20px;">Thank you for contacting!</span>
     </div>
   </div>
 </section>
@@ -164,7 +165,7 @@ I deliver scalable tools tailored for real-world problems.
         <div class="footer-social">
           <a href="https://github.com/vikas-tikapur"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/vikas-mishra-3a210b228/"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+          <a href="mailto:vikas2001mishra@gmail"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
 
@@ -185,8 +186,8 @@ I deliver scalable tools tailored for real-world problems.
         <a href="tel:+916387185647" class="footer-contact-link">
        <p><i class="fas fa-phone-alt"></i> +91-6387185647</p>
        </a>
-       <a href="mailto:vikas2001mishra.com" class="footer-contact-link">
-       <p><i class="fas fa-envelope"></i> vikas2001mishra.com</p>
+       <a href="mailto:vikas2001mishra@gmail.com" class="footer-contact-link">
+       <p><i class="fas fa-envelope"></i> vikas2001mishra@gmail.com</p>
        </a>
         <a href="https://www.google.com/maps/place/Prayagraj,+Uttar+Pradesh" target="_blank" class="footer-contact-link">
        <p><i class="fas fa-map-marker-alt"></i> Prayagraj, Uttar Pradesh, India</p>
@@ -207,6 +208,17 @@ I deliver scalable tools tailored for real-world problems.
     toggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+
+
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  this.reset(); // form clear
+  document.getElementById('thankYouMsg').style.display = 'block';
+  setTimeout(() => {
+    document.getElementById('thankYouMsg').style.display = 'none';
+  }, 3000); // after 3 seconds message hide
+});
   </script>
 
 </body>
