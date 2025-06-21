@@ -9,14 +9,23 @@ header  {
   background-color: #ffffff;
   padding: 1rem 2rem;
   box-shadow: 0px 1px 15px 0px rgba(150, 150, 150, 0.25);
-  position: relative;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 40px;
+}
+body {
+  padding-top: 70px; 
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 70px;
 }
 img.site-logo {
     height: 100px;
@@ -71,6 +80,13 @@ img.site-logo {
     display: block;
   }
 
+  .navbar{
+    padding-right: 20px;
+  }
+  header {
+    height: 30px;
+  }
+
   .nav-links {
     position: absolute;
     top: 55px;
@@ -83,7 +99,7 @@ img.site-logo {
     display: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-top: -10px;
-    margin-left: 52%;
+    margin-left: 48%;
   }
 
   header{
