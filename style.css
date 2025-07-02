@@ -716,7 +716,11 @@ img.site-logo {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.hidden-card {
+.my-hidden-card {
+  display: none;
+}
+
+.wp-hidden-card {
   display: none;
 }
 
@@ -725,9 +729,9 @@ img.site-logo {
   text-align: center;
 }
 
-#loadMoreBtn {
+#loadMoreBtnMy, #loadMoreBtnWP {
   padding: 0.8rem 1.5rem;
-  font-weight: 600;;
+  font-weight: 600;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -741,7 +745,7 @@ img.site-logo {
   text-decoration: none;
 }
 
-#loadMoreBtn:hover {
+#loadMoreBtnMy:hover, #loadMoreBtnWP:hover {
     color: rgba(242, 113, 0, 1);
     background-color: transparent;
     border: 2px solid rgba(242, 113, 0, 1);
@@ -750,4 +754,8 @@ img.site-logo {
 a:focus {
   outline: none;
   box-shadow: none;
+}
+
+#my_prodes{
+  padding-top: 20px;
 }
