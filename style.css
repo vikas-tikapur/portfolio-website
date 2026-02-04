@@ -4,6 +4,328 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ===== Page Loader ===== */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-spinner {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #f0f0f0;
+  border-top: 5px solid rgba(242, 113, 0, 1);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+.page-loader p {
+  font-size: 16px;
+  color: rgba(71, 71, 71, 1);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* ===== Typing Effect Animation ===== */
+@keyframes blink {
+  0%, 49% {
+    border-right: 3px solid rgba(242, 113, 0, 1);
+  }
+  50%, 100% {
+    border-right: 3px solid transparent;
+  }
+}
+
+.typing-cursor {
+  animation: blink 0.7s infinite;
+  display: inline-block;
+}
+
+/* ===== Scroll Reveal Animation ===== */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+/* ===== Form Validation Styles ===== */
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgba(242, 113, 0, 1);
+  box-shadow: 0 0 10px rgba(242, 113, 0, 0.2);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #e74c3c;
+  background-color: #fadbd8;
+}
+
+.error-msg {
+  display: none;
+  color: #e74c3c;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+}
+
+.error-msg.show {
+  display: block;
+}
+
+.success-msg {
+  display: block;
+  color: #27ae60;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #d5f4e6;
+  border-radius: 8px;
+  text-align: center;
+  animation: slideInUp 0.5s ease-out;
+  margin-top: 1rem;
+}
+
+.submit-btn {
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(242, 113, 0, 0.3);
+}
+
+/* ===== Back-to-Top Button ===== */
+.back-to-top {
+  position: fixed;
+  bottom: -50px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(242, 113, 0, 1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(242, 113, 0, 0.4);
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background-color: rgba(230, 100, 0, 1);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(242, 113, 0, 0.6);
+}
+
+.back-to-top.show {
+  bottom: 30px;
+}
+
+/* ===== Navbar Hover Effects ===== */
+.nav-links li a {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(242, 113, 0, 1);
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* ===== Enhanced Button Styles ===== */
+.btn, .btn-outline {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn::before, .btn-outline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before, .btn-outline:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(242, 113, 0, 0.3);
+}
+
+.btn-outline:hover {
+  background-color: rgba(242, 113, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* ===== Project Card Hover Effects ===== */
+.project-card {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(242, 113, 0, 0.1), rgba(10, 99, 155, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card img {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Smooth Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(242, 113, 0, 0.6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(242, 113, 0, 1);
+}
+
+/* ===== Header Sticky Effect ===== */
+header {
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
 /* ===== Header/Navbar ===== */
 header  {
   background-color: #ffffff;
@@ -67,6 +389,13 @@ img.site-logo {
 
 .nav-links li a:active {
   color: rgba(10, 99, 155, 1);
+}
+
+.nav-links li a.active-link {
+  color: rgba(242, 113, 0, 1);
+  font-weight: 600;
+  border-bottom: 3px solid rgba(242, 113, 0, 1);
+  padding-bottom: 5px;
 }
 
 .menu-toggle {

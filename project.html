@@ -3,231 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vikas Mishra</title>
+  <title>Vikas Mishra - Projects</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Font Awesome CDN for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- ===== Page Loader ===== -->
+  <div id="pageLoader" class="page-loader">
+    <div class="loader-spinner"></div>
+    <p>Loading your projects...</p>
+  </div>
 
   <!-- ===== Header ===== -->
   <header class="head">
     <nav class="navbar">
       <div class="logo-container">
-        <!-- <img src="images/download (5)-modified.png" alt="Site Logo" class="site-logo"> -->
         <h1 id="site-title">
-  <a href="index.html" style="text-decoration: none; color: inherit;">Vikas Mishra</a>
-</h1>
+          <a href="index.html" style="text-decoration: none; color: inherit;">Vikas Mishra</a>
+        </h1>
       </div>
-
-      <!-- Toggle icon for mobile -->
       <div class="menu-toggle" id="menu-toggle">
         <i class="fas fa-bars"></i>
       </div>
-
-      <ul class="nav-links nav-hide" id="nav-links nav-hide">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="project-banner">
-  <div class="banner-content">
-    <h1>Projects</h1>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section class="projects-section">
-  <h2 class="section-title">My Projects</h2>
-  <div class="cards-container">
-    
-    
-    <!-- Card 1 -->
-    <div class="project-card">
-      <h3>Face Attendance System</h3>
-      <img src="images/face_att.png" alt="Face Attendance System Logo" class="project-logo">
-      <p id="my_prodes">Automated attendance system using face recognition with Python.</p>
-      <a href="https://github.com/vikas-tikapur/Face-Recognition-Attendance-System" target="_blank">View Project</a>
+    <div class="banner-content">
+      <h1>Projects</h1>
     </div>
+  </section>
 
-    <!--  Card 2 -->
-    <div class="project-card">
-      <h3>Gesture Virtual Mouse</h3>
-      <img src="images/ges_virtual.png" alt="Gesture Virtual Mouse Logo" class="project-logo">
-      <p id="my_prodes">Control mouse using hand gestures using MediaPipe and OpenCV.</p>
-      <a href="https://github.com/vikas-tikapur/Virtual-Mouse" target="_blank">View Project</a>
+  <!-- My Projects Section -->
+  <section class="projects-section" id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="cards-container">
+      
+      <!-- Card 1 -->
+      <div class="project-card">
+        <h3>Face Attendance System</h3>
+        <img src="images/face_att.png" alt="Face Attendance System Logo" class="project-logo">
+        <p>Automated attendance system using face recognition with Python.</p>
+        <a href="https://github.com/vikas-tikapur/Face-Recognition-Attendance-System" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card">
+        <h3>Gesture Virtual Mouse</h3>
+        <img src="images/ges_virtual.png" alt="Gesture Virtual Mouse Logo" class="project-logo">
+        <p>Control mouse using hand gestures using MediaPipe and OpenCV.</p>
+        <a href="https://github.com/vikas-tikapur/Virtual-Mouse" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card">
+        <h3>IPL Cricket Data Analysis</h3>
+        <img src="images/ipl_cricket.png" alt="IPL Cricket Data Analysis Logo" class="project-logo">
+        <p>Insightful cricket analytics using real IPL datasets with Pandas & NumPy.</p>
+        <a href="https://github.com/vikas-tikapur/IPL-Cricket-Data-Analysis" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card">
+        <h3>Garud AI</h3>
+        <img src="images/garud_ai.png" alt="Garud AI Logo" class="project-logo">
+        <p>Real-time weapon detection using YOLOv5 & OpenCV.</p>
+        <a href="https://garudai.com" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="project-card">
+        <h3>TechWith Vikas</h3>
+        <img src="images/tech_vikas.jpg" alt="TechWith Vikas Logo" class="project-logo">
+        <p>Personal learning platform built with HTML, CSS, and JavaScript.</p>
+        <a href="https://vikas-tikapur.github.io/TechWith-Vikas/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <img src="images/portfolio.png" alt="Portfolio Website Logo" class="project-logo">
+        <p>My personal portfolio showcasing skills and projects.</p>
+        <a href="https://vikas-tikapur.github.io/portfolio-website/" target="_blank">Visit Website</a>
+      </div>
+
+      <!-- Card 7 - Hidden -->
+      <div class="project-card my-hidden-card" style="display: none;">
+        <h3>Expense Tracker App</h3>
+        <img src="images/expense.png" alt="Expense Tracker App Logo" class="project-logo">
+        <p>A simple desktop application to track your daily expenses built with Python.</p>
+        <a href="https://github.com/vikas-tikapur/Expense-Tracker-App" target="_blank">View Project</a>
+      </div>
+
     </div>
-
-    <!--  Card 3 -->
-    <div class="project-card">
-      <h3>IPL Cricket Data Analysis</h3>
-      <img src="images/ipl_cricket.png" alt="IPL Cricket Data Analysis Logo" class="project-logo">
-      <p id="my_prodes">Insightful cricket analytics using real IPL datasets with Pandas & NumPy.</p>
-      <a href="https://github.com/vikas-tikapur/IPL-Cricket-Data-Analysis" target="_blank">View Project</a>
+    <div class="load-more-container">
+      <button id="loadMoreBtnMy">Load More</button>
     </div>
+  </section>
 
-    <!-- Card 4 -->
-    <div class="project-card">
-      <h3>Garud AI</h3>
-      <img src="images/garud_ai.png" alt="Garud AI Logo" class="project-logo">
-      <p id="my_prodes">Real-time weapon detection using YOLOv5 & OpenCV.</p>
-      <a href="https://garudai.com" target="_blank">View Project</a>
+  <!-- WordPress Section -->
+  <section class="projects-section">
+    <h2 class="section-title">WordPress Websites</h2>
+    <div class="cards-container">
+
+      <!-- Card 1 -->
+      <div class="project-card">
+        <h3>Vcana Global</h3>
+        <img src="images/vcana.png" alt="vcanaglobal Logo" class="project-logo">
+        <a href="https://www.vcanaglobal.com/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card">
+        <h3>Kupar Tours</h3>
+        <img src="images/Kupar.png" alt="Kupar Tours Logo" class="project-logo">
+        <a href="https://kupartours.com/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card">
+        <h3>DataCenter BD Advisors</h3>
+        <img src="images/datacenter.png" alt="DataCenter BD Advisors Logo" class="project-logo">
+        <a href="https://developments.vcanaglobal.com/dcbdadvisors/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card">
+        <h3>Driving Business Excellence</h3>
+        <img src="images/driving.png" alt="Driving Business Excellence Logo" class="project-logo">
+        <a href="https://drivingbizx.com/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="project-card">
+        <h3>Ascent Construction Group</h3>
+        <img src="images/ascent.png" alt="Ascent Logo" class="project-logo">
+        <a href="https://ascentcgp.com/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="project-card">
+        <h3>Streamline Marine Services</h3>
+        <img src="images/stream.png" alt="Streamline Marine Services Logo" class="project-logo">
+        <a href="https://kayennecaribbean.com/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 7 - Hidden -->
+      <div class="project-card wp-hidden-card" style="display: none;">
+        <h3>Hitek Marine Services</h3>
+        <img src="images/hitech.png" alt="Hitek Marine Services Logo" class="project-logo">
+        <a href="https://hitekmarinegroup.com/" target="_blank">View Project</a>
+      </div>
+
+      <!-- Card 8 - Hidden -->
+      <div class="project-card wp-hidden-card" style="display: none;">
+        <h3>Sagesse Bio</h3>
+        <img src="images/sagesse.jpg" alt="Sagesse Bio Logo" class="project-logo">
+        <a href="https://developments.vcanaglobal.com/sagesse-bio/" target="_blank">View Project</a>
+      </div>
+
     </div>
-
-    <!--  Card 5 -->
-    <div class="project-card">
-      <h3>TechWith Vikas</h3>
-      <img src="images/tech_vikas.jpg" alt="TechWith Vikas Logo" class="project-logo">
-      <p id="my_prodes">Personal learning platform built with HTML, CSS, and JavaScript.</p>
-      <a href="https://vikas-tikapur.github.io/TechWith-Vikas/" target="_blank">View Project</a>
+    <div class="load-more-container">
+      <button id="loadMoreBtnWP">Load More</button>
     </div>
-
-    <!-- Card 6 -->
-    <div class="project-card">
-      <h3>Personal Portfolio Website</h3>
-      <img src="images/portfolio.png" alt="Portfolio Website Logo" class="project-logo">
-      <p id="my_prodes">My personal portfolio showcasing skills and projects.</p>
-      <a href="https://vikas-tikapur.github.io/portfolio-website/" target="_blank">Visit Website</a>
-    </div>
-
-    <!--  Hidden Cards (Initially Hidden) -->
-
-<!-- Card 7 -->
-    <div class="project-card my-hidden-card">
-  <h3>Expense Tracker App</h3>
-  <img src="images/expense.png" alt="Expense Tracker App Logo" class="project-logo">
-  <p id="my_prodes">A simple desktop application to track your daily expenses built with Python.</p>
-  <a href="https://github.com/vikas-tikapur/Expense-Tracker-App" target="_blank">View Project</a>
-</div>
-  </div>
-  </div>
-  <div class="load-more-container">
-    <button id="loadMoreBtnMy">Load More</button>
-  </div>
-</section>
-
-
-<!-- WordPress Section -->
-<section class="projects-section">
-  <h2 class="section-title">WordPress Websites</h2>
-  <div class="cards-container">
-    
-    
-    <!-- Card 1 -->
-    <div class="project-card">
-  <h3>Vcana Global</h3>
-  <img src="images/vcana.png" alt="vcanaglobal Logo" class="project-logo">
-  <a href="https://www.vcanaglobal.com/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 2 -->
- <div class="project-card">
-  <h3>Kupar Tours</h3>
-  <img src="images/Kupar.png" alt="Kupar Tours Logo" class="project-logo">
-  <a href="https://kupartours.com/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 3 -->
- <div class="project-card">
-  <h3>DataCenter BD Advisors</h3>
-  <img src="images/datacenter.png" alt="DataCenter BD Advisors Logo" class="project-logo">
-  <a href="https://developments.vcanaglobal.com/dcbdadvisors/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 4 -->
- <div class="project-card">
-  <h3>Driving Business Excellence</h3>
-  <img src="images/driving.png" alt="Driving Business Excellence Logo" class="project-logo">
-  <a href="https://drivingbizx.com/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 5 -->
- <div class="project-card">
-  <h3>Ascent Construction Group</h3>
-  <img src="images/ascent.png" alt="Driving Business Excellence Logo" class="project-logo">
-  <a href="https://ascentcgp.com/" target="_blank">View Project</a>
-</div>
-
-    <!--  Card 6 -->
-    <div class="project-card">
-  <h3>Streamline Marine Services</h3>
-  <img src="images/stream.png" alt="Streamline Marine Services Logo" class="project-logo">
-  <a href="https://kayennecaribbean.com/" target="_blank">View Project</a>
-</div>
-
-
-<!--  Hidden Cards (Initially Hidden) -->
-
-<!-- Card 7 -->
-    <div class="project-card wp-hidden-card">
-  <h3>Hitek Marine Services</h3>
-  <img src="images/hitech.png" alt="Hitek Marine Services Logo" class="project-logo">
-  <a href="https://hitekmarinegroup.com/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 8 -->
-    <div class="project-card wp-hidden-card">
-  <h3>Sagesse Bio</h3>
-  <img src="images/sagesse.jpg" alt="Sagesse Bio Logo" class="project-logo">
-  <a href="https://developments.vcanaglobal.com/sagesse-bio/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 9 -->
-    <div class="project-card wp-hidden-card">
-  <h3>Blytheconsulting</h3>
-  <img src="images/blythe.png" alt="Blytheconsulting Logo" class="project-logo">
-  <a href="https://blytheconsultinggroup.com/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 10 -->
-    <div class="project-card wp-hidden-card">
-  <h3>National Motorists Association (NMA)</h3>
-  <img src="images/nma.jpg" alt="National Motorists Association (NMA) Logo" class="project-logo">
-  <a href="https://developments.vcanaglobal.com/nma/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 11 -->
-    <div class="project-card wp-hidden-card">
-  <h3>Kayenne Caribbean</h3>
-  <img src="images/kayenn.jpg" alt="Kayenne Caribbean Logo" class="project-logo">
-  <a href="https://kayennecaribbean.com/" target="_blank">View Project</a>
-</div>
-
-  <!-- Card 12 -->
-    <div class="project-card wp-hidden-card">
-  <h3>Kelly Kingsly</h3>
-  <img src="images/kelly.png" alt="Kelly Kingsly Logo" class="project-logo">
-  <a href="https://vcanaglobal.in/kellykingsly/" target="_blank">View Project</a>
-</div>
-
-<!-- Card 12 -->
-    <div class="project-card wp-hidden-card">
-  <h3>Serve Humanity Serve God Charitable Trust</h3>
-  <img src="images/shsg.png" alt="shsg Logo" class="project-logo">
-  <a href="https://vcanaglobal.in/shsg/" target="_blank">View Project</a>
-</div>
-  </div>
-  <div class="load-more-container">
-    <button id="loadMoreBtnWP">Load More</button>
-  </div>
-</section>
-
+  </section>
 
   <!-- ===== Footer ===== -->
   <footer class="footer">
     <div class="footer-container">
-      
-      <!-- Section 1: Logo + About + Social -->
       <div class="footer-section">
-        <!-- <img src="images/download (5)-modified.png" alt="Site Logo" class="footer-logo"> -->
-         <h1 id="site-title">
-  <a href="index.html" style="text-decoration: none; color: inherit;">Vikas Mishra</a>
-</h1>
+        <h1 id="site-title">
+          <a href="index.html" style="text-decoration: none; color: inherit;">Vikas Mishra</a>
+        </h1>
         <p class="footer-about">I build AI & Python-based solutions to solve real-world problems with efficiency and creativity.</p>
         <div class="footer-social">
           <a href="https://github.com/vikas-tikapur"><i class="fab fa-github"></i></a>
@@ -236,30 +190,27 @@
         </div>
       </div>
 
-      <!-- Section 2: Quick Links -->
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </div>
 
-      <!-- Section 3: Contact Us -->
       <div class="footer-section">
         <h3>Contact Us</h3>
         <a href="tel:+916387185647" class="footer-contact-link">
-       <p><i class="fas fa-phone-alt"></i> +91-6387185647</p>
-       </a>
-       <a href="mailto:vikas2001mishra@gmail.com" class="footer-contact-link">
-       <p><i class="fas fa-envelope"></i> vikas2001mishra@gmail.com</p>
-       </a>
+          <p><i class="fas fa-phone-alt"></i> +91-6387185647</p>
+        </a>
+        <a href="mailto:vikas2001mishra@gmail.com" class="footer-contact-link">
+          <p><i class="fas fa-envelope"></i> vikas2001mishra@gmail.com</p>
+        </a>
         <a href="https://www.google.com/maps/place/Prayagraj,+Uttar+Pradesh" target="_blank" class="footer-contact-link">
-       <p><i class="fas fa-map-marker-alt"></i> Prayagraj, Uttar Pradesh, India</p>
-       </a>
-
+          <p><i class="fas fa-map-marker-alt"></i> Prayagraj, Uttar Pradesh, India</p>
+        </a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -277,29 +228,37 @@
     });
 
     // My Projects Load More
-  const loadMoreBtnMy = document.getElementById("loadMoreBtnMy");
-  const myHiddenCards = document.querySelectorAll(".my-hidden-card");
-  if(loadMoreBtnMy){
-    loadMoreBtnMy.addEventListener("click", function () {
-      myHiddenCards.forEach(card => {
-        card.style.display = "block";
+    const loadMoreBtnMy = document.getElementById("loadMoreBtnMy");
+    const myHiddenCards = document.querySelectorAll(".my-hidden-card");
+    if(loadMoreBtnMy){
+      loadMoreBtnMy.addEventListener("click", function () {
+        myHiddenCards.forEach(card => {
+          card.style.display = "block";
+        });
+        loadMoreBtnMy.style.display = "none";
       });
-      loadMoreBtnMy.style.display = "none";
-    });
-  }
+    }
 
-  // WordPress Websites Load More
-  const loadMoreBtnWP = document.getElementById("loadMoreBtnWP");
-  const wpHiddenCards = document.querySelectorAll(".wp-hidden-card");
-  if(loadMoreBtnWP){
-    loadMoreBtnWP.addEventListener("click", function () {
-      wpHiddenCards.forEach(card => {
-        card.style.display = "block";
+    // WordPress Websites Load More
+    const loadMoreBtnWP = document.getElementById("loadMoreBtnWP");
+    const wpHiddenCards = document.querySelectorAll(".wp-hidden-card");
+    if(loadMoreBtnWP){
+      loadMoreBtnWP.addEventListener("click", function () {
+        wpHiddenCards.forEach(card => {
+          card.style.display = "block";
+        });
+        loadMoreBtnWP.style.display = "none";
       });
-      loadMoreBtnWP.style.display = "none";
-    });
-  }
+    }
   </script>
+
+  <!-- ===== Back-to-Top Button ===== -->
+  <button id="backToTop" class="back-to-top" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== Main JavaScript File ===== -->
+  <script src="main.js"></script>
 
 </body>
 </html>
